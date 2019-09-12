@@ -1,0 +1,5 @@
+package com.usertodo.models;
+
+public class Todo {
+
+}

@@ -1,0 +1,2601 @@
+!SESSION 2019-09-11 18:01:03.969 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data D:\PRACTICE\Project\UserTodo\BackEnd -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2019-09-11 18:01:08.432
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-11 18:01:08.432
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@421c057a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@16448827,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-11 18:01:14.268
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ritzy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-11 18:01:23.547
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to eclipse.org:443 [eclipse.org/198.41.30.198] failed: Read timed out. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to eclipse.org:443 [eclipse.org/198.41.30.198] failed: Read timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 17 more
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2019-09-11 18:01:36.129
+!MESSAGE /resources/css/dark.css
+!STACK 0
+java.io.FileNotFoundException: /resources/css/dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:54)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:172)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:451)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:419)
+	at org.eclipse.ui.internal.dialogs.ViewsPreferencePage.performOk(ViewsPreferencePage.java:290)
+	at org.eclipse.jface.preference.PreferencePage.performApply(PreferencePage.java:457)
+	at org.eclipse.ui.internal.dialogs.ViewsPreferencePage.performApply(ViewsPreferencePage.java:363)
+	at org.eclipse.jface.preference.PreferencePage.lambda$1(PreferencePage.java:289)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:821)
+	at org.eclipse.jface.window.Window.open(Window.java:797)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:214)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SESSION 2019-09-11 18:01:47.081 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/D:/PRACTICE/Project/UserTodo/BackEnd/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2019-09-11 18:01:50.863
+!MESSAGE /resources/css/dark.css
+!STACK 0
+java.io.FileNotFoundException: /resources/css/dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:54)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:172)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:451)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:419)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:580)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1442)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1349)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1066)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.jface 2 0 2019-09-11 18:01:51.315
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-11 18:01:51.315
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78977b59,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4bf6bc2d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-11 18:01:56.202
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ritzy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-11 18:02:02.117
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20180504-0806
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:31.124
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:31.130
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@51479623[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=1206)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:31.136
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:31.210
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.698
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KIfmNzzP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.703
+!MESSAGE subscribing to classpath changes: sts4.classpath.KIfmNzzP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.710
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.716
+!MESSAGE subsribers = [sts4.classpath.KIfmNzzP]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.721
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.728
+!MESSAGE project UserTodoBackend ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.736
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.741
+!MESSAGE Preparing classpath changed notification UserTodoBackend
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.746
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KIfmNzzP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.753
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.765
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.771
+!MESSAGE executing callback sts4.classpath.KIfmNzzP UserTodoBackend false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:11:33.820
+!MESSAGE executing callback sts4.classpath.KIfmNzzP SUCCESS [done]
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 18:22:18.147
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 18:22:18.154
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 18:22:18.159
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:22:54.194
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KIfmNzzP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:22:54.200
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.KIfmNzzP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:22:54.205
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:22:54.210
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KIfmNzzP => OK
+!SESSION 2019-09-11 18:25:18.663 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data D:\PRACTICE\Project\UserTodo\BackEnd -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2019-09-11 18:25:22.610
+!MESSAGE /resources/css/dark.css
+!STACK 0
+java.io.FileNotFoundException: /resources/css/dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:54)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:172)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:451)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:419)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:580)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1442)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1349)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1066)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.jface 2 0 2019-09-11 18:25:23.060
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-11 18:25:23.060
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ec921f1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@172ca6a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:29.057
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:29.064
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1513e6f7[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=1206)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:29.071
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:29.110
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-11 18:25:30.265
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ritzy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.031
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GGyWgjOp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.037
+!MESSAGE subscribing to classpath changes: sts4.classpath.GGyWgjOp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.045
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.051
+!MESSAGE subsribers = [sts4.classpath.GGyWgjOp]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.057
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.065
+!MESSAGE project UserTodoBackend ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.072
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.078
+!MESSAGE Preparing classpath changed notification UserTodoBackend
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.084
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GGyWgjOp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.091
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.105
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.112
+!MESSAGE executing callback sts4.classpath.GGyWgjOp UserTodoBackend false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:25:33.168
+!MESSAGE executing callback sts4.classpath.GGyWgjOp SUCCESS [done]
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-11 18:25:35.353
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20180504-0806
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 18:26:03.307
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 18:26:03.315
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 18:26:03.321
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-11 18:27:24.775
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-11 18:27:24.847
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:42:04.812
+!MESSAGE Preparing classpath changed notification UserTodoBackend
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:42:04.820
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:42:04.827
+!MESSAGE executing callback sts4.classpath.GGyWgjOp UserTodoBackend true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:42:04.840
+!MESSAGE executing callback sts4.classpath.GGyWgjOp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.416
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.423
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.429
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.436
+!MESSAGE executing callback sts4.classpath.GGyWgjOp User-todo-list false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.444
+!MESSAGE executing callback sts4.classpath.GGyWgjOp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.783
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.793
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.804
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.812
+!MESSAGE executing callback sts4.classpath.GGyWgjOp User-todo-list false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 18:44:41.874
+!MESSAGE executing callback sts4.classpath.GGyWgjOp SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-09-11 18:47:38.722
+!MESSAGE Skipping launch configuration UserTodoBackend
+!STACK 1
+org.eclipse.core.runtime.CoreException: Variable references non-existent resource : ${project_loc:UserTodoBackend}
+	at org.eclipse.debug.internal.core.variables.ResourceResolver.abort(ResourceResolver.java:115)
+	at org.eclipse.debug.internal.core.variables.ResourceResolver.resolveValue(ResourceResolver.java:61)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:59)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:272)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:195)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:90)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:595)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:361)
+	at org.eclipse.m2e.internal.launch.LaunchingUtils.substituteVar(LaunchingUtils.java:28)
+	at org.eclipse.m2e.actions.ExecutePomAction.getLaunchConfiguration(ExecutePomAction.java:290)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:138)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:95)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:423)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:263)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.showShortcutSelectionDialog(ContextRunner.java:374)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:192)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:101)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:423)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:240)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:230)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:439)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.debug.core 4 120 2019-09-11 18:47:38.722
+!MESSAGE Variable references non-existent resource : ${project_loc:UserTodoBackend}
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-11 18:56:48.879
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-11 18:56:55.367
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-11 18:57:08.789
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.core.jobs 2 2 2019-09-11 18:58:37.328
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.ls.eclipse.commons.STS4LanguageServerProcessStreamConnector$1
+!SESSION 2019-09-11 19:00:36.555 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data D:\PRACTICE\Project\UserTodo\BackEnd -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2019-09-11 19:00:40.550
+!MESSAGE /resources/css/dark.css
+!STACK 0
+java.io.FileNotFoundException: /resources/css/dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:54)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:172)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:451)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:419)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:580)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1442)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1349)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1066)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.jface 2 0 2019-09-11 19:00:40.950
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-11 19:00:40.950
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4bf6bc2d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2c914364,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:47.118
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:47.125
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@78dc5ea0[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=1206)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:47.133
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:47.167
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-11 19:00:48.582
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ritzy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.432
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.XvKvYHKi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.455
+!MESSAGE subscribing to classpath changes: sts4.classpath.XvKvYHKi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.466
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.474
+!MESSAGE subsribers = [sts4.classpath.XvKvYHKi]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.482
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.495
+!MESSAGE project User-todo-list ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.506
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.514
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.524
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.XvKvYHKi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.536
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.556
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.563
+!MESSAGE executing callback sts4.classpath.XvKvYHKi User-todo-list false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:00:51.674
+!MESSAGE executing callback sts4.classpath.XvKvYHKi SUCCESS [done]
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-11 19:00:53.297
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20180504-0806
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 19:01:07.500
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 19:01:07.509
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 19:01:07.517
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-11 19:01:32.364
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-11 19:02:15.868
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-09-11 19:02:17.191
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:453)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:255)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:232)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:303)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:168)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:48)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:364)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:76)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:590)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:258)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:529)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-09-11 19:02:17.200
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:05:49.283
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XvKvYHKi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:05:49.291
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.XvKvYHKi
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:05:49.297
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:05:49.302
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XvKvYHKi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.479
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.AnOqFVuH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.485
+!MESSAGE subscribing to classpath changes: sts4.classpath.AnOqFVuH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.491
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.497
+!MESSAGE subsribers = [sts4.classpath.AnOqFVuH]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.502
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.507
+!MESSAGE project User-todo-list ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.513
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.519
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.526
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.AnOqFVuH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.531
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.540
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.546
+!MESSAGE executing callback sts4.classpath.AnOqFVuH User-todo-list false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 19:08:04.594
+!MESSAGE executing callback sts4.classpath.AnOqFVuH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:18:12.019
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.AnOqFVuH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:18:12.027
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.AnOqFVuH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:18:12.033
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:18:12.038
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.AnOqFVuH => OK
+!SESSION 2019-09-11 20:18:14.628 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/D:/PRACTICE/Project/UserTodo/BackEnd/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2019-09-11 20:18:20.687
+!MESSAGE /resources/css/dark.css
+!STACK 0
+java.io.FileNotFoundException: /resources/css/dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:54)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:172)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:451)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:419)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:580)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1442)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1349)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1066)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.jface 2 0 2019-09-11 20:18:21.262
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-11 20:18:21.262
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25c756f0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@66c9aca2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 20:18:28.160
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 20:18:28.237
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 20:18:28.249
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-11 20:18:28.663
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ritzy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-11 20:18:33.626
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20180504-0806
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:43.033
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:43.042
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1651f6f8[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=1206)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:43.052
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:43.085
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.469
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.gvptHuqM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.475
+!MESSAGE subscribing to classpath changes: sts4.classpath.gvptHuqM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.481
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.488
+!MESSAGE subsribers = [sts4.classpath.gvptHuqM]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.493
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.501
+!MESSAGE project User-todo-list ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.507
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.512
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.519
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.gvptHuqM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.524
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.552
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.558
+!MESSAGE executing callback sts4.classpath.gvptHuqM User-todo-list false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:45.606
+!MESSAGE executing callback sts4.classpath.gvptHuqM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:49.256
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.gvptHuqM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:49.263
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.gvptHuqM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:49.268
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:49.273
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.gvptHuqM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.685
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.iDLEXcHs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.691
+!MESSAGE subscribing to classpath changes: sts4.classpath.iDLEXcHs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.696
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.702
+!MESSAGE subsribers = [sts4.classpath.iDLEXcHs]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.707
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.712
+!MESSAGE project User-todo-list ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.717
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.722
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.726
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.iDLEXcHs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.733
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.743
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.748
+!MESSAGE executing callback sts4.classpath.iDLEXcHs User-todo-list false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:19:52.799
+!MESSAGE executing callback sts4.classpath.iDLEXcHs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:24:48.042
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.iDLEXcHs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:24:48.050
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.iDLEXcHs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:24:48.057
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:24:48.064
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.iDLEXcHs => OK
+!SESSION 2019-09-11 20:25:08.976 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2019-09-11 20:25:13.875
+!MESSAGE /resources/css/dark.css
+!STACK 0
+java.io.FileNotFoundException: /resources/css/dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:54)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:172)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:280)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:451)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:419)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:580)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1442)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1349)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1066)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.jface 2 0 2019-09-11 20:25:14.265
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-11 20:25:14.265
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c79a7c1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5d160056,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 20:25:23.605
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 20:25:23.650
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-11 20:25:23.664
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-11 20:25:24.203
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ritzy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-11 20:25:28.927
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20180504-0806
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.ui 4 0 2019-09-11 20:29:14.960
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4594)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:215)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:204)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:199)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:138)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:81)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:42)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:349)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:474)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5148)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4797)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:253)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3999)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3555)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.tm4e.ui.internal.menus.ThemeContribution.getContributionItems(ThemeContribution.java:59)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:150)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:731)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:813)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1222)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:203)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 64 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-09-11 20:31:21.390
+!MESSAGE Skipping launch configuration UserTodoBackend
+!STACK 1
+org.eclipse.core.runtime.CoreException: Variable references non-existent resource : ${project_loc:UserTodoBackend}
+	at org.eclipse.debug.internal.core.variables.ResourceResolver.abort(ResourceResolver.java:115)
+	at org.eclipse.debug.internal.core.variables.ResourceResolver.resolveValue(ResourceResolver.java:61)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:59)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:272)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:195)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:90)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:595)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:361)
+	at org.eclipse.m2e.internal.launch.LaunchingUtils.substituteVar(LaunchingUtils.java:28)
+	at org.eclipse.m2e.actions.ExecutePomAction.getLaunchConfiguration(ExecutePomAction.java:290)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:138)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:127)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:434)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:88)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:138)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1064)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1260)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.debug.core 4 120 2019-09-11 20:31:21.391
+!MESSAGE Variable references non-existent resource : ${project_loc:UserTodoBackend}
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-09-11 20:32:07.672
+!MESSAGE Skipping launch configuration UserTodoBackend
+!STACK 1
+org.eclipse.core.runtime.CoreException: Variable references non-existent resource : ${project_loc:UserTodoBackend}
+	at org.eclipse.debug.internal.core.variables.ResourceResolver.abort(ResourceResolver.java:115)
+	at org.eclipse.debug.internal.core.variables.ResourceResolver.resolveValue(ResourceResolver.java:61)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:59)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:272)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:195)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:90)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:595)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:361)
+	at org.eclipse.m2e.internal.launch.LaunchingUtils.substituteVar(LaunchingUtils.java:28)
+	at org.eclipse.m2e.actions.ExecutePomAction.getLaunchConfiguration(ExecutePomAction.java:290)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:138)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:127)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:434)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:88)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:138)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1064)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1260)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.debug.core 4 120 2019-09-11 20:32:07.673
+!MESSAGE Variable references non-existent resource : ${project_loc:UserTodoBackend}
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-09-11 20:37:12.031
+!MESSAGE Skipping launch configuration UserTodoBackend
+!STACK 1
+org.eclipse.core.runtime.CoreException: Variable references non-existent resource : ${project_loc:UserTodoBackend}
+	at org.eclipse.debug.internal.core.variables.ResourceResolver.abort(ResourceResolver.java:115)
+	at org.eclipse.debug.internal.core.variables.ResourceResolver.resolveValue(ResourceResolver.java:61)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:59)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:272)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:195)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:90)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:595)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:361)
+	at org.eclipse.m2e.internal.launch.LaunchingUtils.substituteVar(LaunchingUtils.java:28)
+	at org.eclipse.m2e.actions.ExecutePomAction.getLaunchConfiguration(ExecutePomAction.java:290)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:138)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:127)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:434)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:88)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:138)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1064)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1260)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.debug.core 4 120 2019-09-11 20:37:12.031
+!MESSAGE Variable references non-existent resource : ${project_loc:UserTodoBackend}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:27.757
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:27.766
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@3e1e38cb[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=1206)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:27.774
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:27.800
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.887
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.PDrlvEFI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.893
+!MESSAGE subscribing to classpath changes: sts4.classpath.PDrlvEFI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.899
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.905
+!MESSAGE subsribers = [sts4.classpath.PDrlvEFI]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.912
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.919
+!MESSAGE project User-todo-list ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.925
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.931
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.936
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.PDrlvEFI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.942
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.956
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:29.963
+!MESSAGE executing callback sts4.classpath.PDrlvEFI User-todo-list false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:37:30.015
+!MESSAGE executing callback sts4.classpath.PDrlvEFI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:27.055
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:27.062
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:27.070
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:27.076
+!MESSAGE executing callback sts4.classpath.PDrlvEFI User-todo-list false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:27.115
+!MESSAGE executing callback sts4.classpath.PDrlvEFI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:56.248
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:56.256
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:56.269
+!MESSAGE classpath=83 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:56.275
+!MESSAGE executing callback sts4.classpath.PDrlvEFI User-todo-list false 83
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 20:40:56.289
+!MESSAGE executing callback sts4.classpath.PDrlvEFI SUCCESS [done]
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-12 13:20:06.447
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:02.995
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:03.003
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:03.017
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:03.025
+!MESSAGE executing callback sts4.classpath.PDrlvEFI User-todo-list false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:03.100
+!MESSAGE executing callback sts4.classpath.PDrlvEFI SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-09-12 13:23:04.164
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-security:2.1.8.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.8.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.8.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-09-12 13:23:04.165
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.8.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-09-12 13:23:04.165
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.8.RELEASE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:11.730
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:11.739
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:11.748
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:11.754
+!MESSAGE executing callback sts4.classpath.PDrlvEFI User-todo-list false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 13:23:11.766
+!MESSAGE executing callback sts4.classpath.PDrlvEFI SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-09-12 13:23:14.213
+!MESSAGE Could not download javadoc for org.springframework.boot:spring-boot-starter-security:2.1.8.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-security:jar:javadoc:2.1.8.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-security:jar:javadoc:2.1.8.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-09-12 13:23:14.213
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-security:jar:javadoc:2.1.8.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-09-12 13:23:14.213
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-security:jar:javadoc:2.1.8.RELEASE
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-12 13:24:32.349
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-09-12 13:24:33.837
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:453)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:255)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:232)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:303)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:168)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:48)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:364)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:76)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:590)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:258)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:529)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-09-12 13:24:33.843
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 13:25:44.307
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 13:26:24.070
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 13:27:12.886
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 13:27:27.776
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 13:29:47.060
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 13:36:10.712
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 14:18:37.071
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:20:58.605
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:20:58.612
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:20:58.621
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:20:58.628
+!MESSAGE executing callback sts4.classpath.PDrlvEFI User-todo-list false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:20:58.675
+!MESSAGE executing callback sts4.classpath.PDrlvEFI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:21:05.802
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:21:05.807
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:21:05.814
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:21:05.818
+!MESSAGE executing callback sts4.classpath.PDrlvEFI User-todo-list false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 14:21:05.826
+!MESSAGE executing callback sts4.classpath.PDrlvEFI SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 14:24:56.736
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2019-09-12 14:34:32.285
+!MESSAGE Cannot add P/User-todo-list to the list of segments in src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...)::com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list:: as a parent.
+!STACK 0
+org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$CyclicPathException: Cannot add P/User-todo-list to the list of segments in src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...)::com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list:: as a parent.
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$TreePathCompiler.addParent(NavigatorContentServiceContentProvider.java:540)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:603)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getParents(NavigatorContentServiceContentProvider.java:331)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(AbstractTreeViewer.java:1739)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(TreeViewer.java:566)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1678)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setExpandedElements(AbstractTreeViewer.java:2441)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.frameChanged(TreeViewerFrameSource.java:69)
+	at org.eclipse.ui.internal.navigator.CommonNavigatorFrameSource.frameChanged(CommonNavigatorFrameSource.java:55)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.handlePropertyChange(TreeViewerFrameSource.java:168)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.lambda$0(TreeViewerFrameSource.java:47)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.firePropertyChange(FrameList.java:93)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.setCurrent(FrameList.java:208)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.gotoFrame(FrameList.java:165)
+	at org.eclipse.ui.internal.navigator.framelist.GoIntoAction.run(GoIntoAction.java:54)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2019-09-12 14:34:32.291
+!MESSAGE Cannot add src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...) to the list of segments in com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list::src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...):: as a parent.
+!STACK 0
+org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$CyclicPathException: Cannot add src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...) to the list of segments in com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list::src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...):: as a parent.
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$TreePathCompiler.addParent(NavigatorContentServiceContentProvider.java:540)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:603)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getParents(NavigatorContentServiceContentProvider.java:331)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(AbstractTreeViewer.java:1739)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(TreeViewer.java:566)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1678)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setExpandedElements(AbstractTreeViewer.java:2441)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.frameChanged(TreeViewerFrameSource.java:69)
+	at org.eclipse.ui.internal.navigator.CommonNavigatorFrameSource.frameChanged(CommonNavigatorFrameSource.java:55)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.handlePropertyChange(TreeViewerFrameSource.java:168)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.lambda$0(TreeViewerFrameSource.java:47)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.firePropertyChange(FrameList.java:93)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.setCurrent(FrameList.java:208)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.gotoFrame(FrameList.java:165)
+	at org.eclipse.ui.internal.navigator.framelist.GoIntoAction.run(GoIntoAction.java:54)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2019-09-12 14:34:32.297
+!MESSAGE Cannot add P/User-todo-list to the list of segments in src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...)::com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list:: as a parent.
+!STACK 0
+org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$CyclicPathException: Cannot add P/User-todo-list to the list of segments in src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...)::com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list:: as a parent.
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$TreePathCompiler.addParent(NavigatorContentServiceContentProvider.java:540)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:603)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getParents(NavigatorContentServiceContentProvider.java:331)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(AbstractTreeViewer.java:1739)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(TreeViewer.java:566)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1678)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1680)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setExpandedElements(AbstractTreeViewer.java:2441)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.frameChanged(TreeViewerFrameSource.java:69)
+	at org.eclipse.ui.internal.navigator.CommonNavigatorFrameSource.frameChanged(CommonNavigatorFrameSource.java:55)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.handlePropertyChange(TreeViewerFrameSource.java:168)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.lambda$0(TreeViewerFrameSource.java:47)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.firePropertyChange(FrameList.java:93)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.setCurrent(FrameList.java:208)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.gotoFrame(FrameList.java:165)
+	at org.eclipse.ui.internal.navigator.framelist.GoIntoAction.run(GoIntoAction.java:54)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2019-09-12 14:34:32.302
+!MESSAGE Cannot add src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...) to the list of segments in com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list::src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...)::com.usertodo.services [in src/main/java [in User-todo-list]]
+  [Working copy] CustomUserDetailsService.java
+    package com.usertodo.services
+    import java.util.ArrayList
+    import java.util.Arrays
+    import java.util.HashSet
+    import java.util.List
+    import java.util.Set
+    import org.springframework.beans.factory.annotation.Autowired
+    import org.springframework.security.core.GrantedAuthority
+    import org.springframework.security.core.authority.SimpleGrantedAuthority
+    import org.springframework.security.core.userdetails.UserDetails
+    import org.springframework.security.core.userdetails.UserDetailsService
+    import org.springframework.security.core.userdetails.UsernameNotFoundException
+    import org.springframework.security.crypto.password.PasswordEncoder
+    import org.springframework.stereotype.Service
+    import com.usertodo.models.User
+    import com.usertodo.repositories.UserRepository
+    class CustomUserDetailsService
+      UserRepository userRepository
+      PasswordEncoder bCryptPasswordEncoder
+      User findUserByEmail(String)
+      void saveUser(User)
+      UserDetails loadUserByUsername(String)
+      UserDetails buildUserForAuthentication(User, List<GrantedAuthority>):: as a parent.
+!STACK 0
+org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$CyclicPathException: Cannot add src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...) to the list of segments in com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list::src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...)::com.usertodo.services [in src/main/java [in User-todo-list]]
+  [Working copy] CustomUserDetailsService.java
+    package com.usertodo.services
+    import java.util.ArrayList
+    import java.util.Arrays
+    import java.util.HashSet
+    import java.util.List
+    import java.util.Set
+    import org.springframework.beans.factory.annotation.Autowired
+    import org.springframework.security.core.GrantedAuthority
+    import org.springframework.security.core.authority.SimpleGrantedAuthority
+    import org.springframework.security.core.userdetails.UserDetails
+    import org.springframework.security.core.userdetails.UserDetailsService
+    import org.springframework.security.core.userdetails.UsernameNotFoundException
+    import org.springframework.security.crypto.password.PasswordEncoder
+    import org.springframework.stereotype.Service
+    import com.usertodo.models.User
+    import com.usertodo.repositories.UserRepository
+    class CustomUserDetailsService
+      UserRepository userRepository
+      PasswordEncoder bCryptPasswordEncoder
+      User findUserByEmail(String)
+      void saveUser(User)
+      UserDetails loadUserByUsername(String)
+      UserDetails buildUserForAuthentication(User, List<GrantedAuthority>):: as a parent.
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$TreePathCompiler.addParent(NavigatorContentServiceContentProvider.java:540)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:603)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getParents(NavigatorContentServiceContentProvider.java:331)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(AbstractTreeViewer.java:1739)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(TreeViewer.java:566)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1678)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setExpandedElements(AbstractTreeViewer.java:2441)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.frameChanged(TreeViewerFrameSource.java:69)
+	at org.eclipse.ui.internal.navigator.CommonNavigatorFrameSource.frameChanged(CommonNavigatorFrameSource.java:55)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.handlePropertyChange(TreeViewerFrameSource.java:168)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.lambda$0(TreeViewerFrameSource.java:47)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.firePropertyChange(FrameList.java:93)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.setCurrent(FrameList.java:208)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.gotoFrame(FrameList.java:165)
+	at org.eclipse.ui.internal.navigator.framelist.GoIntoAction.run(GoIntoAction.java:54)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2019-09-12 14:34:32.308
+!MESSAGE Cannot add src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...) to the list of segments in com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list::src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...):: as a parent.
+!STACK 0
+org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$CyclicPathException: Cannot add src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...) to the list of segments in com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list::src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...):: as a parent.
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$TreePathCompiler.addParent(NavigatorContentServiceContentProvider.java:540)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:603)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getParents(NavigatorContentServiceContentProvider.java:331)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(AbstractTreeViewer.java:1739)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(TreeViewer.java:566)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1678)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1680)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setExpandedElements(AbstractTreeViewer.java:2441)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.frameChanged(TreeViewerFrameSource.java:69)
+	at org.eclipse.ui.internal.navigator.CommonNavigatorFrameSource.frameChanged(CommonNavigatorFrameSource.java:55)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.handlePropertyChange(TreeViewerFrameSource.java:168)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.lambda$0(TreeViewerFrameSource.java:47)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.firePropertyChange(FrameList.java:93)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.setCurrent(FrameList.java:208)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.gotoFrame(FrameList.java:165)
+	at org.eclipse.ui.internal.navigator.framelist.GoIntoAction.run(GoIntoAction.java:54)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2019-09-12 14:34:32.314
+!MESSAGE Cannot add P/User-todo-list to the list of segments in src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...)::com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list:: as a parent.
+!STACK 0
+org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$CyclicPathException: Cannot add P/User-todo-list to the list of segments in src/main/java [in User-todo-list]
+  <default> (...)
+  com (...)
+  com.usertodo (...)
+  com.usertodo.config (...)
+  com.usertodo.models (...)
+  com.usertodo.repositories (...)
+  com.usertodo.services (...)::com.usertodo.repositories [in src/main/java [in User-todo-list]]
+  UserRepository.java
+    package com.usertodo.repositories
+    import com.usertodo.models.User
+    import org.springframework.data.mongodb.repository.MongoRepository
+    interface UserRepository
+      User findByEmail(String)::P/User-todo-list:: as a parent.
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$TreePathCompiler.addParent(NavigatorContentServiceContentProvider.java:540)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:603)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.findPaths(NavigatorContentServiceContentProvider.java:604)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getParents(NavigatorContentServiceContentProvider.java:331)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(AbstractTreeViewer.java:1739)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(TreeViewer.java:566)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1678)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1680)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1680)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setExpandedElements(AbstractTreeViewer.java:2441)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.frameChanged(TreeViewerFrameSource.java:69)
+	at org.eclipse.ui.internal.navigator.CommonNavigatorFrameSource.frameChanged(CommonNavigatorFrameSource.java:55)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.handlePropertyChange(TreeViewerFrameSource.java:168)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.lambda$0(TreeViewerFrameSource.java:47)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.firePropertyChange(FrameList.java:93)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.setCurrent(FrameList.java:208)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.gotoFrame(FrameList.java:165)
+	at org.eclipse.ui.internal.navigator.framelist.GoIntoAction.run(GoIntoAction.java:54)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 14:46:26.151
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 17:27:24.756
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 17:27:25.905
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 17:28:35.918
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 17:54:19.123
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 17:54:57.809
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 18:05:07.537
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:08:42.944
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PDrlvEFI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:08:42.950
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.PDrlvEFI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:08:42.955
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:08:42.959
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PDrlvEFI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.734
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JiElYZJs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.739
+!MESSAGE subscribing to classpath changes: sts4.classpath.JiElYZJs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.745
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.749
+!MESSAGE subsribers = [sts4.classpath.JiElYZJs]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.755
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.760
+!MESSAGE project User-todo-list ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.764
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.769
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.774
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.778
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JiElYZJs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.783
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.788
+!MESSAGE executing callback sts4.classpath.JiElYZJs User-todo-list false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:09:05.841
+!MESSAGE executing callback sts4.classpath.JiElYZJs SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 18:12:19.402
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:15.745
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JiElYZJs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:15.751
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.JiElYZJs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:15.755
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:15.760
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JiElYZJs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.521
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JEKiMQlm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.526
+!MESSAGE subscribing to classpath changes: sts4.classpath.JEKiMQlm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.531
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.536
+!MESSAGE subsribers = [sts4.classpath.JEKiMQlm]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.540
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.544
+!MESSAGE project User-todo-list ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.550
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.554
+!MESSAGE Preparing classpath changed notification User-todo-list
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.560
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JEKiMQlm => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.564
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.572
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.577
+!MESSAGE executing callback sts4.classpath.JEKiMQlm User-todo-list false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-12 18:19:22.625
+!MESSAGE executing callback sts4.classpath.JEKiMQlm SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 19:08:24.470
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 19:21:30.668
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 19:23:37.575
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 19:24:09.997
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 19:24:12.123
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 19:36:38.184
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-12 19:37:40.950
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:43)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)

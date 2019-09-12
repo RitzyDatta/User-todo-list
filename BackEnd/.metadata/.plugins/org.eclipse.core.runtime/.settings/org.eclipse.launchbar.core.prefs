@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:UserTodoBackend,org.eclipse.launchbar.core.descriptorType.default\:User-todo-list (1),org.eclipse.launchbar.core.descriptorType.default\:User-todo-list,org.eclipse.launchbar.core.descriptorType.default\:User-todo-list (2),org.eclipse.launchbar.core.descriptorType.default\:User-todo-list - UserTodoListApplication
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:User-todo-list/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:User-todo-list/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:UserTodoBackend/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:UserTodoBackend/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

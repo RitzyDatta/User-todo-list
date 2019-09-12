@@ -1,0 +1,5 @@
+package com.usertodo.services;
+
+public class CustomUserDetailsService {
+
+}
